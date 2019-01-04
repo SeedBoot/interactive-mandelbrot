@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mandelbrot</title>
+</head>
+<body>
+    <canvas id="canvas" width="600" height="600"></canvas>
+
+    <div>
+        <button id="cancel">cancel animation</button>
+        <button id="continue">resume animation</button>
+    </div>
+    
+    <div>
+        <label for="x-axis">x-axis</label>
+        <input type="range" id="x-axis" name="x-axis"
+            min="0" max="10" step="0.01">
+
+        <label for="y-axis">y-axis</label>
+        <input type="range" id="y-axis" name="y-axis"
+            min="0" max="10" step="0.01">
+
+        <label for="magnification">magnification</label>
+        <input type="range" name="magnification" id="magnification"
+            min="200" max="7000" step="1" value="200">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
